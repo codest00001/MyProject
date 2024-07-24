@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')({sigint:true});
 let targetNumber = Math.floor(Math.random() * 100) + 1;
 let guess = null;
 
-123while (guess !== targetNumber) {
+123333while (guess !== targetNumber) {
     guess = parseInt(prompt("Guess a number between 1 and 100:"));
 
 
