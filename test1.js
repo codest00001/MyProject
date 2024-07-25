@@ -20,4 +20,4 @@ while (guess !== targetNumber) {
         console.log("정답이에요!")
         break;
     }
-   } 12333
+   } 12333dfdf
