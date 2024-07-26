@@ -20,4 +20,8 @@ while (guess !== targetNumber) {
         console.log("정답이에요!")
         break;
     }
-   } abcd
+   } 
+
+   if ({}) {
+    console.log("성인입니다.");
+}
