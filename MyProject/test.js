@@ -1,11 +1,12 @@
-function fetchData(callback) {
-    setTimeout(() => {
-        callback("데이터 로드 완료");
-    }, 2000);
-}
+const http = require('http');
 
-fetchData((message) => {
-    console.log(message); // "데이터 로드 완료" (2초 후 출력)
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('content-Type', 'text/plain');
+    res.end('Hello, world!\n');
 });
 
-console.log("finished!")
+const port = 3000;
+server.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+});
